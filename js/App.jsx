@@ -25,7 +25,7 @@ class App extends Component {
             <Route
               exact
               path="/"
-              component={props => <Landing posts={this.state.posts} />}
+              component={() => <Landing posts={this.state.posts} />}
             />
             <Route component={FourOhFour} />
           </Switch>
